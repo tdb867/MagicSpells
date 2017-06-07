@@ -29,7 +29,7 @@ public class Ward extends ClassPermissions implements SpellLoadout{
 //            attachment.setPermission("magicspells.learn."+m.getKey(), false);            
         }
         
-        //Add spell permissions just for the mage class
+        //Add spell permissions just for this class
         for(Map.Entry m : allSpells.entrySet()) {
             if (m.getValue().equals("ward")) {
                 attachment.setPermission("magicspells.grant."+m.getKey(), true);

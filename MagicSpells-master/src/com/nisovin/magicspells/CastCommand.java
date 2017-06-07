@@ -20,9 +20,7 @@ import com.nisovin.magicspells.mana.ManaChangeReason;
 import com.nisovin.magicspells.spells.TargetedEntitySpell;
 import com.nisovin.magicspells.spells.TargetedLocationSpell;
 import com.nisovin.magicspells.util.Util;
-import com.ungoliant.magicspells.Mage;
-import com.ungoliant.magicspells.SpellLoadout;
-import com.ungoliant.magicspells.Ward;
+import com.ungoliant.magicspells.*;
 
 public class CastCommand implements CommandExecutor, TabCompleter {
 
@@ -300,16 +298,36 @@ public class CastCommand implements CommandExecutor, TabCompleter {
                                 Spellbook spellbook = MagicSpells.getSpellbook(player);
                                 if (args.length == 0) {
                                     player.sendMessage("Choose a class.");
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("warrior")) {
+                                    player.sendMessage("You have chosen the warrior class!");
+                                    SpellLoadout p = new Warrior(player, plugin);
                                 } else if (args.length == 1 && args[0].equalsIgnoreCase("mage")) {
                                     player.sendMessage("You have chosen the mage class!");
                                     SpellLoadout p = new Mage(player, plugin);
-                                    
-//                                    Permission q =  new Permission("magicspells.grant.fireball");
-//                                    PluginManager pm = getServer().getPluginManager();
-//                                    pm.addPermission(q);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("ranger")) {
+                                    player.sendMessage("You have chosen the ranger class!");
+                                    SpellLoadout p = new Ranger(player, plugin);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("cleric")) {
+                                    player.sendMessage("You have chosen the cleric class!");
+                                    SpellLoadout p = new Cleric(player, plugin);
                                 } else if (args.length == 1 && args[0].equalsIgnoreCase("ward")) {
                                     player.sendMessage("You have chosen the ward class!");
                                     SpellLoadout p = new Ward(player, plugin);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("thief")) {
+                                    player.sendMessage("You have chosen the thief class!");
+                                    SpellLoadout p = new Thief(player, plugin);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("bard")) {
+                                    player.sendMessage("You have chosen the bard class!");
+                                    SpellLoadout p = new Bard(player, plugin);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("shaman")) {
+                                    player.sendMessage("You have chosen the shaman class!");
+                                    SpellLoadout p = new Shaman(player, plugin);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("necromancer")) {
+                                    player.sendMessage("You have chosen the necromancer class!");
+                                    SpellLoadout p = new Necromancer(player, plugin);
+                                } else if (args.length == 1 && args[0].equalsIgnoreCase("architect")) {
+                                    player.sendMessage("You have chosen the architect class!");
+                                    SpellLoadout p = new Architect(player, plugin);
                                 }
                                                               
                                 

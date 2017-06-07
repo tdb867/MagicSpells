@@ -1706,4 +1706,8 @@ spells:
             - lightning
             - DELAY 5
             - explode
-            
+    
+    hello:
+        spell-class: "my.custom.spells.HelloSpell"
+        name: hello
+        description: Hello, world!

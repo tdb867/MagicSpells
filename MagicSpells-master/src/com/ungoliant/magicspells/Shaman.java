@@ -14,9 +14,9 @@ import org.bukkit.permissions.PermissionAttachment;
  *
  * @author Travis
  */
-public class Mage extends ClassPermissions implements SpellLoadout{
+public class Shaman extends ClassPermissions implements SpellLoadout{
     
-    public Mage(Player player, MagicSpells plugin) {
+    public Shaman(Player player, MagicSpells plugin) {
         //Create the spellMap
         super();
         
@@ -34,7 +34,7 @@ public class Mage extends ClassPermissions implements SpellLoadout{
         
         //Add spell permissions just for this class
         for(Map.Entry m : allSpells.entrySet()) {
-            if (m.getValue().equals("mage")) {
+            if (m.getValue().equals("shaman")) {
                 attachment.setPermission("magicspells.grant."+m.getKey(), true);
                 attachment.setPermission("magicspells.cast."+m.getKey(), true);
 //                attachment.setPermission("magicspells.learn."+m.getKey(), false);

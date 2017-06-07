@@ -1478,4 +1478,18 @@ zeus:
         - lightning
         - DELAY 5
         - explode
-        
+
+missile:
+    spell-class: ".targeted.HomingMissileSpell"
+    projectile-velocity: 3
+    projectile-inertia: 10
+    particle-name: flame
+    str-cast-self: Cast!
+    str-no-target: No target.
+    spell: lightning
+    target-players: true
+    
+witherskull:
+    spell-class: ".instant.WitherSkullSpell"
+    charged: false
+    velocity: 2.0
