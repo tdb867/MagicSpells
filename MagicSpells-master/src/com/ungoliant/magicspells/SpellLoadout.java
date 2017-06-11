@@ -14,4 +14,5 @@ public interface SpellLoadout {
     void castE();
     void castR();
     void castF();
+    String getPlayerClass();
 }

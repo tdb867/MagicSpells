@@ -1,4 +1,4 @@
-/*
+  /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -19,7 +19,7 @@ public class Mage extends ClassPermissions implements SpellLoadout{
     public Mage(Player player, MagicSpells plugin) {
         //Create the spellMap
         super();
-        
+        player.sendMessage("You have chosen the Mage class!");
         PermissionAttachment attachment = player.addAttachment(plugin);
         //grant permission for list, forget, and scroll spells
         if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
@@ -82,5 +82,10 @@ public class Mage extends ClassPermissions implements SpellLoadout{
     @Override
     public void castF() {
         System.out.println("Casting blink...");
+    }
+    
+    @Override
+    public String getPlayerClass() {
+        return this.toString();
     }
 }

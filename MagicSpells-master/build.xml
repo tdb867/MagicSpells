@@ -24,6 +24,10 @@
 	<property name="factions.version" value="1.0"/>
 	<property name="factions.src.dir" location="src_factions"/>
 	<property name="factions.build.dir" location="bin_factions"/>
+        
+        <property name="dev.version" value="1.0"/>
+	<property name="dev.src.dir" location="C:\\Users\\Travis\\Documents\\NetBeansProjects\\MagicSpells-dev\\MagicSpells-dev\\src"/>
+	<property name="dev.build.dir" location="C:\\Users\\Travis\\Documents\\NetBeansProjects\\MagicSpells-dev\\MagicSpells-dev\\bin"/>
 	
 	<property name="dist.dir" location="dist"/>
 	<property name="lib.dir" location="lib"/>
@@ -31,12 +35,12 @@
 	<property name="serv.dir" location="C:\\Users\\Travis\\Desktop\\Minecraft_Projects\\dev\\plugins"/>
 	<tstamp><format property="datestamp" pattern="yyMMddHHmm"/></tstamp>
 		
-	<target name="build" depends="build-version, clean, core-jar, teams-jar, memory-jar, shop-jar, towny-jar, factions-jar, zip"/>
+	<target name="build" depends="build-version, clean, core-jar, teams-jar, memory-jar, shop-jar, towny-jar, factions-jar, dev-jar, zip"/>
 	<target name="build-version">
 		<property name="version.suffix" value="dev-${datestamp}"/>
 	</target>
 	
-	<target name="release" depends="release-version, clean, core-jar, teams-jar, memory-jar, shop-jar, towny-jar, factions-jar, zip"/>
+	<target name="release" depends="release-version, clean, core-jar, teams-jar, memory-jar, shop-jar, towny-jar, factions-jar, dev-jar, zip"/>
 	<target name="release-version">
 		<property name="version.suffix" value="release"/>
 	</target>
@@ -49,6 +53,7 @@
 		<delete dir="${shop.build.dir}"/>
 		<delete dir="${towny.build.dir}"/>
 		<delete dir="${factions.build.dir}"/>
+                <delete dir="${dev.build.dir}"/>
 		<delete dir="${doc.dir}"/>
 		<delete dir="${dist.dir}"/>
 		<mkdir dir="${dist.dir}"/>
@@ -218,6 +223,34 @@
 		<jar destfile="${dist.dir}\MagicSpellsFactions-${factions.version}-${version.suffix}.jar" basedir="${factions.build.dir}"/>
 		<copy file="${dist.dir}\MagicSpellsFactions-${factions.version}-${version.suffix}.jar" tofile="${dist.dir}\MagicSpellsFactions.jar"/>
 		<copy file="${dist.dir}\MagicSpellsFactions.jar" todir="${serv.dir}"/>
+	</target>
+        
+        <!-- Compile dev addon -->
+	<target name="dev-compile" depends="core-jar">
+		<mkdir dir="${dev.build.dir}"/>
+		<javac srcdir="${dev.src.dir}" destdir="${dev.build.dir}" debug="true" source="1.6" target="1.6">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="bukkit*.jar"/>
+					<include name="Dev.jar"/>
+					<include name="mcore.jar"/>
+				</fileset>
+				<filelist dir="${dist.dir}" files="MagicSpells.jar"/>
+			</classpath>
+		</javac>
+		<copy todir="${dev.build.dir}">
+			<fileset dir="${dev.src.dir}">
+				<include name="*.yml"/>
+			</fileset>
+		</copy>
+		<replace file="${dev.build.dir}\plugin.yml" token="VERSION_STRING" value="${dev.version}-${version.suffix}"/>
+	</target>
+	
+	<!-- Create the dev jar file -->
+	<target name="dev-jar" depends="dev-compile">
+		<jar destfile="${dist.dir}\MagicSpellsDev-${dev.version}-${version.suffix}.jar" basedir="${dev.build.dir}"/>
+		<copy file="${dist.dir}\MagicSpellsDev-${dev.version}-${version.suffix}.jar" tofile="${dist.dir}\MagicSpellsDev.jar"/>
+		<copy file="${dist.dir}\MagicSpellsDev.jar" todir="${serv.dir}"/>
 	</target>
 	
 	<!-- Zip everything -->

@@ -20,6 +20,7 @@ public class Warrior extends ClassPermissions implements SpellLoadout{
         //Create the spellMap
         super();
         
+        player.sendMessage("You have chosen the Warrior class!");
         PermissionAttachment attachment = player.addAttachment(plugin);
         //grant permission for list, forget, and scroll spells
         if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
@@ -45,7 +46,6 @@ public class Warrior extends ClassPermissions implements SpellLoadout{
 //        spellbook.removeAllSpells();
 //        spellbook.addSpell(MagicSpells.getSpellByInternalName("fireball"));
     }
-    
 ///** 
 // * Add transient permission to a player. This operation adds a world-unspecific permission onto the player object in bukkit via Bukkit's permission interface.
 // * @param player Player Object
@@ -82,5 +82,10 @@ public class Warrior extends ClassPermissions implements SpellLoadout{
     @Override
     public void castF() {
         System.out.println("Casting blink...");
+    }
+    
+    @Override
+    public String getPlayerClass() {
+        return this.toString();
     }
 }

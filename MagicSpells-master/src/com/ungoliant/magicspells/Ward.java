@@ -20,7 +20,7 @@ public class Ward extends ClassPermissions implements SpellLoadout{
         PermissionAttachment attachment = player.addAttachment(plugin);
         //grant permission for list, forget, and scroll spells
         if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
-        
+        player.sendMessage("You have chosen the Ward class!");
         //Remove all spell permissions
         for(Map.Entry m : allSpells.entrySet()) {
             //removing this permission will not unlearn the spell, try /cast forget <player>
@@ -79,5 +79,10 @@ public class Ward extends ClassPermissions implements SpellLoadout{
     @Override
     public void castF() {
         System.out.println("Casting reflect...");
+    }
+    
+    @Override
+    public String getPlayerClass() {
+        return this.toString();
     }
 }

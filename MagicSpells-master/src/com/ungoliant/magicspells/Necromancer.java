@@ -19,7 +19,7 @@ public class Necromancer extends ClassPermissions implements SpellLoadout{
     public Necromancer(Player player, MagicSpells plugin) {
         //Create the spellMap
         super();
-        
+        player.sendMessage("You have chosen the Necromancer class!");
         PermissionAttachment attachment = player.addAttachment(plugin);
         //grant permission for list, forget, and scroll spells
         if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
@@ -82,5 +82,10 @@ public class Necromancer extends ClassPermissions implements SpellLoadout{
     @Override
     public void castF() {
         System.out.println("Casting blink...");
+    }
+    
+    @Override
+    public String getPlayerClass() {
+        return this.toString();
     }
 }

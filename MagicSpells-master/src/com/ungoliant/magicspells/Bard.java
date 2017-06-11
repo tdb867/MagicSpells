@@ -19,7 +19,7 @@ public class Bard extends ClassPermissions implements SpellLoadout{
     public Bard(Player player, MagicSpells plugin) {
         //Create the spellMap
         super();
-        
+        player.sendMessage("You have chosen the Bard class!");
         PermissionAttachment attachment = player.addAttachment(plugin);
         //grant permission for list, forget, and scroll spells
         if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
@@ -82,5 +82,10 @@ public class Bard extends ClassPermissions implements SpellLoadout{
     @Override
     public void castF() {
         System.out.println("Casting blink...");
+    }
+    
+    @Override
+    public String getPlayerClass() {
+        return this.toString();
     }
 }

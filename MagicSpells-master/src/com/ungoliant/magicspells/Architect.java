@@ -19,6 +19,7 @@ public class Architect extends ClassPermissions implements SpellLoadout{
     public Architect(Player player, MagicSpells plugin) {
         //Create the spellMap
         super();
+        player.sendMessage("You have chosen the Architect class!");
         
         PermissionAttachment attachment = player.addAttachment(plugin);
         //grant permission for list, forget, and scroll spells
@@ -82,5 +83,10 @@ public class Architect extends ClassPermissions implements SpellLoadout{
     @Override
     public void castF() {
         System.out.println("Casting blink...");
+    }
+    
+    @Override
+    public String getPlayerClass() {
+        return this.toString();
     }
 }
