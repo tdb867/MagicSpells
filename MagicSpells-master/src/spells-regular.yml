@@ -477,6 +477,23 @@ forcebomb:
     str-cost: 30 mana
     str-cast-self: An explosion of energy pushes your enemies around.
     str-no-target: No target found.
+wormhole:
+    spell-class: ".targeted.Wormhole"
+    name: wormhole
+    spell-icon: record_3
+    description: Pull your enemies.
+    cast-item: bone
+    cooldown: 8
+    range: 10
+    pushback-force: 30
+    additional-vertical-force: 15
+    max-vertical-force: 20
+    can-target: players,monsters
+    cost:
+        - mana 30
+    str-cost: 30 mana
+    str-cast-self: You pull your enemies!
+    str-cast-others: "%a pulls his enemies."
 forcepush:
     spell-class: ".instant.ForcepushSpell"
     name: forcepush
@@ -1492,4 +1509,96 @@ missile:
 witherskull:
     spell-class: ".instant.WitherSkullSpell"
     charged: false
-    velocity: 2.0
+    velocity: 2.0   
+chime:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    tick-interval: 2
+    spell: pain
+    particle-name: note
+    particle-count: 50
+    effects:
+      noteorbit:
+        position: caster
+        effect: orbit
+        particle-name: note
+        speed: .5
+        count: 25
+frostnova:
+    spell-class: ".targeted.AreaEffectSpell"
+    name: frostnova
+    spell-icon: ice
+    description: Shackle nearby enemies in ice.
+    cast-item: 403|Spellbook:__Thaumaturgy
+    horizontal-radius: 5
+    vertical-radius: 4
+    point-blank: true
+    fail-if-no-targets: true
+    can-target: players,monsters,animals
+    spells:
+        - shackle_effect
+    cooldown: 120
+    cost:
+        - mana 100
+    str-cost: 100 mana
+    str-cast-self: You conjure a ring of ice!
+    str-no-target: No target found.
+    effects:
+      icenova:
+        position: caster
+        effect: nova
+        type: 79
+        radius: 5
+        expand-interval: 2
+      2:
+        position: caster
+        effect: particles
+        particle-name: snowshovel
+        horiz-spread: 1
+        vert-spread: 1
+        speed: .5
+        count: 150
+        y-offset: 0
+        render-distance: 32
+shackle_effect:
+    spell-class: ".targeted.PotionEffectSpell"
+    name: shackle_effect
+    spell-icon: spider_eye
+    description: Shackle an enemy in ice.
+    cooldown: 15
+    range: 20
+    type: 2
+    strength: 7
+    duration: 100
+    targeted: true
+    can-target: players,monsters,animals
+    cost:
+        - mana 12
+    str-cost: 12 mana
+    str-cast-self: You have shackled your target!
+    str-no-target: No target found.
+    effects:
+      snow:
+        position: target
+        effect: particles
+        particle-name: snowshovel
+        horiz-spread: 0.2
+        vert-spread: 0.2
+        speed: 0.2
+        count: 500
+Wormhole_Particle-Projectile:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 0 ##We set the projectile velocity to 0 so that it won't move.
+    hug-surface: true ##We set this to true so that the projectile will stick to the ground. Alternatively, we could also set projectile-gravity to 0. However, I prefer this option.
+    particle-name: witchMagic ##The best wormhole particle, obviously.
+    particle-count: 30 ##This can be adjusted to however many particles you want to have in your wormhole.
+    particle-speed: 0.002 ##We set this to 0.002 to prevent the particle from flying around. This will keep them still.
+    particle-horizontal-spread: 0.3 ##This can be adjusted to however large you want the wormhole to be horizontally, adjust the AoE accordingly.
+    particle-vertical-spread: 0.3 ##This can be adjusted to however large you want the wormhole to be vertically, adjust the AoE accordingly.
+    max-duration: 15 ##You can put this to be however long you want the wormhole to last. The value is in seconds.
+    hit-non-players: false
+    hit-ground: false
+    hit-air-at-end: false
+    hit-air-during:  true ##Setting this to true allows the wormhole AoE to be constantly cast.
+    spell-interval: 1 ##This sets the wormhole AoE to be ran every 1 tick.
+    spell: wormhole

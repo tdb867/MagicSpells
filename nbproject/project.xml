@@ -64,6 +64,27 @@ auxiliary.show.customizer.message=<message>
                     <location>MagicSpells-dev/src</location>
                     <encoding>windows-1252</encoding>
                 </source-folder>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpells.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsDev.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsFactions.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsMemory.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsShop.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTeams.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTowny.jar</location>
+                </build-file>
             </folders>
             <ide-actions>
                 <action name="build">
@@ -79,7 +100,53 @@ auxiliary.show.customizer.message=<message>
                     <target>clean</target>
                     <target>build</target>
                 </action>
+                <action name="debug">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>debug-nb</target>
+                </action>
             </ide-actions>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpells.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsDev.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsFactions.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsMemory.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsShop.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTeams.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTowny.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
             <view>
                 <items>
                     <source-folder style="packages">
@@ -118,6 +185,7 @@ auxiliary.show.customizer.message=<message>
                     <ide-action name="build"/>
                     <ide-action name="rebuild"/>
                     <ide-action name="clean"/>
+                    <ide-action name="debug"/>
                 </context-menu>
             </view>
             <subprojects/>
@@ -132,6 +200,13 @@ auxiliary.show.customizer.message=<message>
                 <package-root>MagicSpells-master/src_towny</package-root>
                 <package-root>MagicSpells-dev/src</package-root>
                 <classpath mode="compile">MagicSpells-master/lib/Essentials.jar;MagicSpells-master/lib/EssentialsAntiBuild.jar;MagicSpells-master/lib/EssentialsChat.jar;MagicSpells-master/lib/EssentialsProtect.jar;MagicSpells-master/lib/EssentialsSpawn.jar;MagicSpells-master/lib/Factions.jar;MagicSpells-master/lib/MagicSpells.jar;MagicSpells-master/lib/PermissionsEx-1.23.4.jar;MagicSpells-master/lib/ProtocolLib.jar;MagicSpells-master/lib/Residence.jar;MagicSpells-master/lib/Towny.jar;MagicSpells-master/lib/Vault.jar;MagicSpells-master/lib/WorldEdit.jar;MagicSpells-master/lib/WorldGuard.jar;MagicSpells-master/lib/bukkit-1.8.7-R0.1-SNAPSHOT.jar;MagicSpells-master/lib/craftbukkit-1.12-pre5.jar;MagicSpells-master/lib/craftbukkit-1.6.4-R2.0.jar;MagicSpells-master/lib/mcore.jar;MagicSpells-master/lib/spigot-1.12-pre6-SNAPSHOT-b1289.jar;MagicSpells-master/lib/spigot-1.8-R0.1-SNAPSHOT.jar;MagicSpells-master/lib/spigot-1.8.7.jar;MagicSpells-master/lib/spigot-1.9.jar;MagicSpells-master/lib/spigot-api-1.9-SNAPSHOT.jar;MagicSpells-master/lib/worldedit-bukkit-6.1.5.jar;MagicSpells-master/lib/worldguard-6.2.jar;MagicSpells-master/src;MagicSpells-master/src_factions;MagicSpells-master/src_memory;MagicSpells-master/src_shop;MagicSpells-master/src_teams;MagicSpells-master/src_towny</classpath>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpells.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsDev.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsFactions.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsMemory.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsShop.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTeams.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTowny.jar</built-to>
                 <source-level>1.5</source-level>
             </compilation-unit>
         </java-data>

@@ -701,6 +701,24 @@ spells:
             - mana 30
         str-cost: 30 mana
         str-cast-self: An explosion of energy pushes your enemies around.
+    wormhole:
+        spell-class: ".targeted.Wormhole"
+        name: wormhole
+        spell-icon: record_4
+        description: Pull your enemies.
+        cast-item: blaze_rod
+        cooldown: 8
+        range: 15
+        radius: 3
+        pushback-force: 30
+        additional-vertical-force: 15
+        max-vertical-force: 20
+        target-players: false
+        dont-target-caster: true
+        cost:
+            - mana 30
+        str-cost: 30 mana
+        str-cast-self: An explosion of energy pushes your enemies around.
     forcepush:
         spell-class: ".instant.ForcepushSpell"
         name: forcepush
@@ -1706,6 +1724,21 @@ spells:
             - lightning
             - DELAY 5
             - explode
+            
+    chime:
+    spell-class: ".instant.ParticleProjectileSpell"
+    projectile-velocity: 10
+    tick-interval: 2
+    spell: pain
+    particle-name: note
+    particle-count: 50
+    effects:
+      noteorbit:
+        position: caster
+        effect: orbit
+        particle-name: note
+        speed: .5
+        count: 25
     
     hello:
         spell-class: "my.custom.spells.HelloSpell"

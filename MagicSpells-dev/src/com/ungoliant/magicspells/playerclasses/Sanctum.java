@@ -19,7 +19,6 @@ import org.bukkit.util.Vector;
 public class Sanctum{
     private Cuboid sanctum;
     Map<String,Location> sanctumMap=new HashMap<String,Location>();
-    private final Vector cuboidSize = new Vector(2,2,2);
     
     public Sanctum(World world) {
         sanctumMap.put("architect",new Location(world,81,71,175));
