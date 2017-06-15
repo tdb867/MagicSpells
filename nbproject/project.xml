@@ -23,45 +23,45 @@ auxiliary.show.customizer.message=<message>
                     <encoding>windows-1252</encoding>
                 </source-folder>
                 <source-folder>
-                    <label>MagicSpells-master\src</label>
-                    <type>java</type>
-                    <location>MagicSpells-master/src</location>
-                    <encoding>windows-1252</encoding>
-                </source-folder>
-                <source-folder>
-                    <label>MagicSpells-master\src_factions</label>
-                    <type>java</type>
-                    <location>MagicSpells-master/src_factions</location>
-                    <encoding>windows-1252</encoding>
-                </source-folder>
-                <source-folder>
-                    <label>MagicSpells-master\src_memory</label>
-                    <type>java</type>
-                    <location>MagicSpells-master/src_memory</location>
-                    <encoding>windows-1252</encoding>
-                </source-folder>
-                <source-folder>
-                    <label>MagicSpells-master\src_shop</label>
-                    <type>java</type>
-                    <location>MagicSpells-master/src_shop</location>
-                    <encoding>windows-1252</encoding>
-                </source-folder>
-                <source-folder>
-                    <label>MagicSpells-master\src_teams</label>
-                    <type>java</type>
-                    <location>MagicSpells-master/src_teams</location>
-                    <encoding>windows-1252</encoding>
-                </source-folder>
-                <source-folder>
-                    <label>MagicSpells-master\src_towny</label>
-                    <type>java</type>
-                    <location>MagicSpells-master/src_towny</location>
-                    <encoding>windows-1252</encoding>
-                </source-folder>
-                <source-folder>
                     <label>MagicSpells-dev\src</label>
                     <type>java</type>
                     <location>MagicSpells-dev/src</location>
+                    <encoding>windows-1252</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>MagicSpells-1.11.2-fork\src</label>
+                    <type>java</type>
+                    <location>MagicSpells-1.11.2-fork/src</location>
+                    <encoding>windows-1252</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>MagicSpells-1.11.2-fork\src_factions</label>
+                    <type>java</type>
+                    <location>MagicSpells-1.11.2-fork/src_factions</location>
+                    <encoding>windows-1252</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>MagicSpells-1.11.2-fork\src_memory</label>
+                    <type>java</type>
+                    <location>MagicSpells-1.11.2-fork/src_memory</location>
+                    <encoding>windows-1252</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>MagicSpells-1.11.2-fork\src_shop</label>
+                    <type>java</type>
+                    <location>MagicSpells-1.11.2-fork/src_shop</location>
+                    <encoding>windows-1252</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>MagicSpells-1.11.2-fork\src_teams</label>
+                    <type>java</type>
+                    <location>MagicSpells-1.11.2-fork/src_teams</location>
+                    <encoding>windows-1252</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>MagicSpells-1.11.2-fork\src_towny</label>
+                    <type>java</type>
+                    <location>MagicSpells-1.11.2-fork/src_towny</location>
                     <encoding>windows-1252</encoding>
                 </source-folder>
                 <build-file>
@@ -150,32 +150,32 @@ auxiliary.show.customizer.message=<message>
             <view>
                 <items>
                     <source-folder style="packages">
-                        <label>MagicSpells-master\src</label>
-                        <location>MagicSpells-master/src</location>
-                    </source-folder>
-                    <source-folder style="packages">
-                        <label>MagicSpells-master\src_factions</label>
-                        <location>MagicSpells-master/src_factions</location>
-                    </source-folder>
-                    <source-folder style="packages">
-                        <label>MagicSpells-master\src_memory</label>
-                        <location>MagicSpells-master/src_memory</location>
-                    </source-folder>
-                    <source-folder style="packages">
-                        <label>MagicSpells-master\src_shop</label>
-                        <location>MagicSpells-master/src_shop</location>
-                    </source-folder>
-                    <source-folder style="packages">
-                        <label>MagicSpells-master\src_teams</label>
-                        <location>MagicSpells-master/src_teams</location>
-                    </source-folder>
-                    <source-folder style="packages">
-                        <label>MagicSpells-master\src_towny</label>
-                        <location>MagicSpells-master/src_towny</location>
-                    </source-folder>
-                    <source-folder style="packages">
                         <label>MagicSpells-dev\src</label>
                         <location>MagicSpells-dev/src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>MagicSpells-1.11.2-fork\src</label>
+                        <location>MagicSpells-1.11.2-fork/src</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>MagicSpells-1.11.2-fork\src_factions</label>
+                        <location>MagicSpells-1.11.2-fork/src_factions</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>MagicSpells-1.11.2-fork\src_memory</label>
+                        <location>MagicSpells-1.11.2-fork/src_memory</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>MagicSpells-1.11.2-fork\src_shop</label>
+                        <location>MagicSpells-1.11.2-fork/src_shop</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>MagicSpells-1.11.2-fork\src_teams</label>
+                        <location>MagicSpells-1.11.2-fork/src_teams</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>MagicSpells-1.11.2-fork\src_towny</label>
+                        <location>MagicSpells-1.11.2-fork/src_towny</location>
                     </source-folder>
                     <source-file>
                         <location>${ant.script}</location>
@@ -192,14 +192,14 @@ auxiliary.show.customizer.message=<message>
         </general-data>
         <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/1">
             <compilation-unit>
-                <package-root>MagicSpells-master/src</package-root>
-                <package-root>MagicSpells-master/src_factions</package-root>
-                <package-root>MagicSpells-master/src_memory</package-root>
-                <package-root>MagicSpells-master/src_shop</package-root>
-                <package-root>MagicSpells-master/src_teams</package-root>
-                <package-root>MagicSpells-master/src_towny</package-root>
                 <package-root>MagicSpells-dev/src</package-root>
-                <classpath mode="compile">MagicSpells-master/lib/Essentials.jar;MagicSpells-master/lib/EssentialsAntiBuild.jar;MagicSpells-master/lib/EssentialsChat.jar;MagicSpells-master/lib/EssentialsProtect.jar;MagicSpells-master/lib/EssentialsSpawn.jar;MagicSpells-master/lib/Factions.jar;MagicSpells-master/lib/MagicSpells.jar;MagicSpells-master/lib/PermissionsEx-1.23.4.jar;MagicSpells-master/lib/ProtocolLib.jar;MagicSpells-master/lib/Residence.jar;MagicSpells-master/lib/Towny.jar;MagicSpells-master/lib/Vault.jar;MagicSpells-master/lib/WorldEdit.jar;MagicSpells-master/lib/WorldGuard.jar;MagicSpells-master/lib/bukkit-1.8.7-R0.1-SNAPSHOT.jar;MagicSpells-master/lib/craftbukkit-1.12-pre5.jar;MagicSpells-master/lib/craftbukkit-1.6.4-R2.0.jar;MagicSpells-master/lib/mcore.jar;MagicSpells-master/lib/spigot-1.12-pre6-SNAPSHOT-b1289.jar;MagicSpells-master/lib/spigot-1.8-R0.1-SNAPSHOT.jar;MagicSpells-master/lib/spigot-1.8.7.jar;MagicSpells-master/lib/spigot-1.9.jar;MagicSpells-master/lib/spigot-api-1.9-SNAPSHOT.jar;MagicSpells-master/lib/worldedit-bukkit-6.1.5.jar;MagicSpells-master/lib/worldguard-6.2.jar;MagicSpells-master/src;MagicSpells-master/src_factions;MagicSpells-master/src_memory;MagicSpells-master/src_shop;MagicSpells-master/src_teams;MagicSpells-master/src_towny</classpath>
+                <package-root>MagicSpells-1.11.2-fork/src</package-root>
+                <package-root>MagicSpells-1.11.2-fork/src_factions</package-root>
+                <package-root>MagicSpells-1.11.2-fork/src_memory</package-root>
+                <package-root>MagicSpells-1.11.2-fork/src_shop</package-root>
+                <package-root>MagicSpells-1.11.2-fork/src_teams</package-root>
+                <package-root>MagicSpells-1.11.2-fork/src_towny</package-root>
+                <classpath mode="compile">MagicSpells-1.11.2-fork/lib/EffectLib-4.0.jar;MagicSpells-1.11.2-fork/lib/Essentials.jar;MagicSpells-1.11.2-fork/lib/EssentialsAntiBuild.jar;MagicSpells-1.11.2-fork/lib/EssentialsChat.jar;MagicSpells-1.11.2-fork/lib/EssentialsProtect.jar;MagicSpells-1.11.2-fork/lib/EssentialsSpawn.jar;MagicSpells-1.11.2-fork/lib/Factions.jar;MagicSpells-1.11.2-fork/lib/LibsDisguises-9.0.9.jar;MagicSpells-1.11.2-fork/lib/MagicSpells.jar;MagicSpells-1.11.2-fork/lib/MassiveCore.jar;MagicSpells-1.11.2-fork/lib/PermissionsEx-1.23.4.jar;MagicSpells-1.11.2-fork/lib/PowerNBT.jar;MagicSpells-1.11.2-fork/lib/ProtocolLib.jar;MagicSpells-1.11.2-fork/lib/Residence-4.5.3.0.jar;MagicSpells-1.11.2-fork/lib/Residence.jar;MagicSpells-1.11.2-fork/lib/Towny.jar;MagicSpells-1.11.2-fork/lib/Vault.jar;MagicSpells-1.11.2-fork/lib/WorldEdit.jar;MagicSpells-1.11.2-fork/lib/WorldGuard.jar;MagicSpells-1.11.2-fork/lib/bukkit-1.8.7-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/bukkit-1.9.4-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.10.2.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.12-pre5.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.6.4-R2.0.jar;MagicSpells-1.11.2-fork/lib/mcore.jar;MagicSpells-1.11.2-fork/lib/spigot-1.10.2.jar;MagicSpells-1.11.2-fork/lib/spigot-1.11.2.jar;MagicSpells-1.11.2-fork/lib/spigot-1.11.jar;MagicSpells-1.11.2-fork/lib/spigot-1.12-pre6-SNAPSHOT-b1289.jar;MagicSpells-1.11.2-fork/lib/spigot-1.12.jar;MagicSpells-1.11.2-fork/lib/spigot-1.8-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/spigot-1.8.7.jar;MagicSpells-1.11.2-fork/lib/spigot-1.9.4.jar;MagicSpells-1.11.2-fork/lib/spigot-1.9.jar;MagicSpells-1.11.2-fork/lib/spigot-api-1.9-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/worldedit-bukkit-6.1.5.jar;MagicSpells-1.11.2-fork/lib/worldguard-6.2.jar</classpath>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpells.jar</built-to>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsDev.jar</built-to>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsFactions.jar</built-to>

@@ -18,7 +18,6 @@ import com.ungoliant.magicspells.Thief;
 import com.ungoliant.magicspells.Ward;
 import com.ungoliant.magicspells.Warrior;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -27,14 +26,9 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.Action;
-import org.bukkit.event.inventory.InventoryClickEvent;
+import org.bukkit.event.player.PlayerBucketEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.PlayerInventory;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -157,7 +151,7 @@ public class CommandSelect extends JavaPlugin implements Listener {
 //            player.sendMessage("Something went wrong");
 //            return;
 //        }
-//        
+        
 //        switch (event.getCurrentItem().getType()) {
 //            case DIAMOND_CHESTPLATE:
 //                SpellLoadout architect = new Architect(player, MagicSpells.plugin);
@@ -230,30 +224,30 @@ public class CommandSelect extends JavaPlugin implements Listener {
 //        event.getPlayer().getInventory().addItem(new ItemStack(Material.COMPASS));
 //    }
     
-//    @EventHandler
-//    public void onPlayerInteract(PlayerInteractEvent event) {
-//        Player player = event.getPlayer();
-////        Action a = event.getAction();
-////        ItemStack is = event.getItem();
-//        Block block = event.getClickedBlock();
-////        if(block.getType()==Material.DIAMOND_BLOCK) {
-////            SpellLoadout x = new Architect(event.getPlayer(), MagicSpells.plugin);
-////        }
-////        if(block.getType()==Material.EMERALD_BLOCK) {
-////            SpellLoadout x = new Bard(event.getPlayer(), MagicSpells.plugin);
-////        }
-////        if(block.getType()==Material.GOLD_BLOCK) {
-////            SpellLoadout x = new Cleric(event.getPlayer(), MagicSpells.plugin);
-////        }
-////        if(block.getType()==Material.HAY_BLOCK) {
-////            SpellLoadout x = new Mage(event.getPlayer(), MagicSpells.plugin);
-////        }
-////        if(block.getType()==Material.LAPIS_BLOCK) {
-////            SpellLoadout x = new Necromancer(event.getPlayer(), MagicSpells.plugin);
-////        }
-////        if(block.getType()==Material.MELON_BLOCK) {
-////            SpellLoadout x = new Ranger(event.getPlayer(), MagicSpells.plugin);
-////        }
+    @EventHandler
+    public void onPlayerInteract(PlayerInteractEvent event) {
+        Player player = event.getPlayer();
+//        Action a = event.getAction();
+//        ItemStack is = event.getItem();
+        Block block = event.getClickedBlock();
+//        if(block.getType()==Material.DIAMOND_BLOCK) {
+//            SpellLoadout x = new Architect(event.getPlayer(), MagicSpells.plugin);
+//        }
+//        if(block.getType()==Material.EMERALD_BLOCK) {
+//            SpellLoadout x = new Bard(event.getPlayer(), MagicSpells.plugin);
+//        }
+//        if(block.getType()==Material.GOLD_BLOCK) {
+//            SpellLoadout x = new Cleric(event.getPlayer(), MagicSpells.plugin);
+//        }
+//        if(block.getType()==Material.HAY_BLOCK) {
+//            SpellLoadout x = new Mage(event.getPlayer(), MagicSpells.plugin);
+//        }
+//        if(block.getType()==Material.LAPIS_BLOCK) {
+//            SpellLoadout x = new Necromancer(event.getPlayer(), MagicSpells.plugin);
+//        }
+//        if(block.getType()==Material.MELON_BLOCK) {
+//            SpellLoadout x = new Ranger(event.getPlayer(), MagicSpells.plugin);
+//        }
 //        if(block.getType()==Material.QUARTZ_BLOCK) {
 //            player.sendMessage("Looking for sanctum...");
 //            Sanctum s = new Sanctum(event.getPlayer().getWorld());
@@ -268,24 +262,33 @@ public class CommandSelect extends JavaPlugin implements Listener {
 //            else if (s.getSanctum(player).equalsIgnoreCase("ward")) {SpellLoadout x = new Ward(player, MagicSpells.plugin);}
 //            else if (s.getSanctum(player).equalsIgnoreCase("warrior")) {SpellLoadout x = new Warrior(player, MagicSpells.plugin);}
 //        }
-////        if(a==Action.PHYSICAL || is == null || is.getType()==Material.AIR) {return;}
-////        if(is.getType() == Material.COMPASS) {
-////            openGUI(event.getPlayer());
-////        }
-//        
-//    }
+//        if(a==Action.PHYSICAL || is == null || is.getType()==Material.AIR) {return;}
+//        if(is.getType() == Material.COMPASS) {
+//            openGUI(event.getPlayer());
+//        }
+        
+    }
     
 
+    
+    @EventHandler
+    public void onPlayerBlockInteract (PlayerBucketEvent event) {
+        Player player = event.getPlayer();
+        Material m = event.getBucket();
+        if(m == Material.QUARTZ_BLOCK) {
+            player.sendMessage("Looking for sanctum...");
+            Sanctum s = new Sanctum(event.getPlayer().getWorld());
+            if (s.getSanctum(player).equalsIgnoreCase("architect")) {SpellLoadout x = new Architect(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("bard")) {SpellLoadout x = new Bard(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("cleric")) {SpellLoadout x = new Cleric(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("mage")) {SpellLoadout x = new Mage(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("necromancer")) {SpellLoadout x = new Necromancer(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("ranger")) {SpellLoadout x = new Ranger(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("shaman")) {SpellLoadout x = new Shaman(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("thief")) {SpellLoadout x = new Thief(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("ward")) {SpellLoadout x = new Ward(player, MagicSpells.plugin);}
+            else if (s.getSanctum(player).equalsIgnoreCase("warrior")) {SpellLoadout x = new Warrior(player, MagicSpells.plugin);}
+        }
     }
-//    @EventHandler
-//    public void onPlayerBlockInteract (PlayerBucketEvent event) {
-//        
-//        
-//        Block block = event.getBlockClicked();
-//        if (block.getType() == Material.QUARTZ_BLOCK) {
-//            SpellLoadout x = new Mage(event.getPlayer(), MagicSpells.plugin);
-//        } else {
-//            event.getPlayer().sendMessage(block.getType().toString());
-//        }
-//    }
+}
 

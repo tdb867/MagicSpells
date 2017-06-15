@@ -1,0 +1,19 @@
+name: MagicSpells
+main: com.nisovin.magicspells.MagicSpells
+version: VERSION_STRING
+authors: [nisovin, TheComputerGeek2]
+softdepend: [Vault,ProtocolLib,WorldGuard,Residence,PowerNBT,LibsDisguises]
+depend: [EffectLib]
+commands:
+    magicspellcast:
+        description: Cast a spell
+        usage: /<command>
+        aliases: [cast,c]
+    magicspellmana:
+        description: Show mana bar
+        usage: /<command>
+        aliases: [mana]
+    magicspellxp:
+        description: Show magic XP info
+        usage: /<command>
+        aliases: [magicxp,spellxp]
