@@ -3,20 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ungoliant.magicspells;
+package com.ungoliant.magicspells.playerclasses;
 
-import java.util.*;
-import org.bukkit.Location;
+import com.nisovin.magicspells.MagicSpells;
+import java.util.HashMap;
+import java.util.Map;
+import org.bukkit.entity.Player;
+import org.bukkit.permissions.PermissionAttachment;
 
 /**
  *
  * @author Travis
  */
-public class ClassPermissions {
-    //Each class gets two instant spells, a targeted spell, and a buff spell
-    //This was arbitrarily decided by tbordovsky
+public abstract class SpellClass {
     //spell names defined in .src\spells-regular.yml
-    protected String[] architect = { //Do not implement
+    protected String[] architect = { //Do not implement yet
         "wall",
         "anvil",
         "stormblock",
@@ -76,45 +77,37 @@ public class ClassPermissions {
         "disarm",
         "flamewalk", //change to whirlwind
     };
- 
-//    private String[] listOfClasses = {
-//        "warrior","mage","ranger","cleric","ward","thief","bard","shaman","necromancer","architect"
-//    };
     
-    protected Map<String,String> allSpells = new HashMap<String,String>();
-
-    public ClassPermissions() {
-        for(String spellName : warrior) {
-            allSpells.put(spellName, "warrior");
-        }
-        for(String spellName : mage) {
-            allSpells.put(spellName, "mage");
-        }
-        for(String spellName : ranger) {
-            allSpells.put(spellName, "ranger");
-        }
-        for(String spellName : cleric) {
-            allSpells.put(spellName, "cleric");
-        }
-        for(String spellName : ward) {
-            allSpells.put(spellName, "ward");
-        }        
-        for(String spellName : bard) {
-            allSpells.put(spellName, "bard");
-        }        
-        for(String spellName : shaman) {
-            allSpells.put(spellName, "shaman");
-        }
-        for(String spellName : necromancer) {
-            allSpells.put(spellName, "necromancer");
-        }
-        for(String spellName : architect) {
-            allSpells.put(spellName, "architect");
-        }        
+    protected Map<String,String[]> spellMap = new HashMap<>();
+    PermissionAttachment attachment = null;
+    
+    public SpellClass() {
+        //consider implementing attributes hashmap for quick access from commandselect
+        spellMap.put("architect", architect);
+        spellMap.put("bard", bard);
+        spellMap.put("cleric", cleric);
+        spellMap.put("mage", mage);
+        spellMap.put("necromancer", necromancer);
+        spellMap.put("ranger", ranger);
+        spellMap.put("shaman", shaman);
+        spellMap.put("thief", thief);
+        spellMap.put("ward", ward);
+        spellMap.put("warrior", warrior);
     }
-    
-//    private String[] getListOfClasses() {
-//        return this.listOfClasses;
-//    }
-    
+    public void removeSpellPerms(Player player, PermissionAttachment attachment) {
+        com.nisovin.magicspells.Spellbook spellbook = MagicSpells.getSpellbook(player);        
+        spellbook.removeAllSpells();
+        for (String spell[] : spellMap.values()) {
+            for (String spellName : spell) {
+                System.out.println("Revoking permissions for: "+spellName);
+            attachment.setPermission("magicspells.grant." + spellName, false);
+//            attachment.setPermission("magicspells.cast." + spellName, false);
+            attachment.setPermission("magicspells.learn."+spellName, false);
+            }
+        }
+    }
+    abstract void setSpellPerms(Player player, MagicSpells plugin);
+    abstract void openClassGUI(Player player, String className);
+    abstract String getClassName();
+    abstract String[] getSpells();
 }

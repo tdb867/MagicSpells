@@ -85,6 +85,27 @@ auxiliary.show.customizer.message=<message>
                 <build-file>
                     <location>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTowny.jar</location>
                 </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpells.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsDev.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsFactions.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsMemory.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsShop.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsTeams.jar</location>
+                </build-file>
+                <build-file>
+                    <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsTowny.jar</location>
+                </build-file>
             </folders>
             <ide-actions>
                 <action name="build">
@@ -147,6 +168,48 @@ auxiliary.show.customizer.message=<message>
                 <script>${ant.script}</script>
                 <build-target>build</build-target>
             </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpells.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsDev.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsFactions.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsMemory.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsShop.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsTeams.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>jar</type>
+                <location>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsTowny.jar</location>
+                <script>${ant.script}</script>
+                <build-target>build</build-target>
+            </export>
             <view>
                 <items>
                     <source-folder style="packages">
@@ -190,7 +253,7 @@ auxiliary.show.customizer.message=<message>
             </view>
             <subprojects/>
         </general-data>
-        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/1">
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/4">
             <compilation-unit>
                 <package-root>MagicSpells-dev/src</package-root>
                 <package-root>MagicSpells-1.11.2-fork/src</package-root>
@@ -199,7 +262,7 @@ auxiliary.show.customizer.message=<message>
                 <package-root>MagicSpells-1.11.2-fork/src_shop</package-root>
                 <package-root>MagicSpells-1.11.2-fork/src_teams</package-root>
                 <package-root>MagicSpells-1.11.2-fork/src_towny</package-root>
-                <classpath mode="compile">MagicSpells-1.11.2-fork/lib/EffectLib-4.0.jar;MagicSpells-1.11.2-fork/lib/Essentials.jar;MagicSpells-1.11.2-fork/lib/EssentialsAntiBuild.jar;MagicSpells-1.11.2-fork/lib/EssentialsChat.jar;MagicSpells-1.11.2-fork/lib/EssentialsProtect.jar;MagicSpells-1.11.2-fork/lib/EssentialsSpawn.jar;MagicSpells-1.11.2-fork/lib/Factions.jar;MagicSpells-1.11.2-fork/lib/LibsDisguises-9.0.9.jar;MagicSpells-1.11.2-fork/lib/MagicSpells.jar;MagicSpells-1.11.2-fork/lib/MassiveCore.jar;MagicSpells-1.11.2-fork/lib/PermissionsEx-1.23.4.jar;MagicSpells-1.11.2-fork/lib/PowerNBT.jar;MagicSpells-1.11.2-fork/lib/ProtocolLib.jar;MagicSpells-1.11.2-fork/lib/Residence-4.5.3.0.jar;MagicSpells-1.11.2-fork/lib/Residence.jar;MagicSpells-1.11.2-fork/lib/Towny.jar;MagicSpells-1.11.2-fork/lib/Vault.jar;MagicSpells-1.11.2-fork/lib/WorldEdit.jar;MagicSpells-1.11.2-fork/lib/WorldGuard.jar;MagicSpells-1.11.2-fork/lib/bukkit-1.8.7-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/bukkit-1.9.4-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.10.2.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.12-pre5.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.6.4-R2.0.jar;MagicSpells-1.11.2-fork/lib/mcore.jar;MagicSpells-1.11.2-fork/lib/spigot-1.10.2.jar;MagicSpells-1.11.2-fork/lib/spigot-1.11.2.jar;MagicSpells-1.11.2-fork/lib/spigot-1.11.jar;MagicSpells-1.11.2-fork/lib/spigot-1.12-pre6-SNAPSHOT-b1289.jar;MagicSpells-1.11.2-fork/lib/spigot-1.12.jar;MagicSpells-1.11.2-fork/lib/spigot-1.8-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/spigot-1.8.7.jar;MagicSpells-1.11.2-fork/lib/spigot-1.9.4.jar;MagicSpells-1.11.2-fork/lib/spigot-1.9.jar;MagicSpells-1.11.2-fork/lib/spigot-api-1.9-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/worldedit-bukkit-6.1.5.jar;MagicSpells-1.11.2-fork/lib/worldguard-6.2.jar</classpath>
+                <classpath mode="compile">MagicSpells-1.11.2-fork/lib/EffectLib-4.0.jar;MagicSpells-1.11.2-fork/lib/Essentials.jar;MagicSpells-1.11.2-fork/lib/EssentialsAntiBuild.jar;MagicSpells-1.11.2-fork/lib/EssentialsChat.jar;MagicSpells-1.11.2-fork/lib/EssentialsProtect.jar;MagicSpells-1.11.2-fork/lib/EssentialsSpawn.jar;MagicSpells-1.11.2-fork/lib/Factions.jar;MagicSpells-1.11.2-fork/lib/LibsDisguises-9.0.9.jar;MagicSpells-1.11.2-fork/lib/MagicSpells.jar;MagicSpells-1.11.2-fork/lib/MassiveCore.jar;MagicSpells-1.11.2-fork/lib/PermissionsEx-1.23.4.jar;MagicSpells-1.11.2-fork/lib/PowerNBT.jar;MagicSpells-1.11.2-fork/lib/ProtocolLib.jar;MagicSpells-1.11.2-fork/lib/Residence-4.5.3.0.jar;MagicSpells-1.11.2-fork/lib/Residence.jar;MagicSpells-1.11.2-fork/lib/Towny.jar;MagicSpells-1.11.2-fork/lib/Vault.jar;MagicSpells-1.11.2-fork/lib/WorldEdit.jar;MagicSpells-1.11.2-fork/lib/WorldGuard.jar;MagicSpells-1.11.2-fork/lib/bukkit-1.8.7-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/bukkit-1.9.4-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.10.2.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.12-pre5.jar;MagicSpells-1.11.2-fork/lib/craftbukkit-1.6.4-R2.0.jar;MagicSpells-1.11.2-fork/lib/mcore.jar;MagicSpells-1.11.2-fork/lib/spigot-1.10.2.jar;MagicSpells-1.11.2-fork/lib/spigot-1.11.2.jar;MagicSpells-1.11.2-fork/lib/spigot-1.11.jar;MagicSpells-1.11.2-fork/lib/spigot-1.12-pre6-SNAPSHOT-b1289.jar;MagicSpells-1.11.2-fork/lib/spigot-1.12.jar;MagicSpells-1.11.2-fork/lib/spigot-1.8-R0.1-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/spigot-1.8.7.jar;MagicSpells-1.11.2-fork/lib/spigot-1.9.4.jar;MagicSpells-1.11.2-fork/lib/spigot-1.9.jar;MagicSpells-1.11.2-fork/lib/spigot-api-1.9-SNAPSHOT.jar;MagicSpells-1.11.2-fork/lib/worldedit-bukkit-6.1.5.jar;MagicSpells-1.11.2-fork/lib/worldguard-6.2.jar;MagicSpells-1.11.2-fork/lib/EffectLib-5.4.jar</classpath>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpells.jar</built-to>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsDev.jar</built-to>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsFactions.jar</built-to>
@@ -207,7 +270,14 @@ auxiliary.show.customizer.message=<message>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsShop.jar</built-to>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTeams.jar</built-to>
                 <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\dev\plugins\MagicSpellsTowny.jar</built-to>
-                <source-level>1.5</source-level>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpells.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsDev.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsFactions.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsMemory.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsShop.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsTeams.jar</built-to>
+                <built-to>C:\Users\Travis\Desktop\Minecraft_Projects\ServerSnapshot_10June17\ServerSnapshot_10June17\_\plugins\MagicSpellsTowny.jar</built-to>
+                <source-level>1.8</source-level>
             </compilation-unit>
         </java-data>
     </configuration>

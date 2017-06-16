@@ -1,91 +1,83 @@
-  /*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ungoliant.magicspells;
+package com.ungoliant.magicspells.playerclasses;
 
 import com.nisovin.magicspells.MagicSpells;
 import java.util.Map;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.permissions.PermissionAttachment;
 
 /**
  *
  * @author Travis
  */
-public class Mage extends ClassPermissions implements SpellLoadout{
-    
+public class Mage extends SpellClass{
+    private final String className = "mage";
+    Integer[] sanctum =  {3796,90,3819};
+//    Material menuItem = Material.DIAMOND_CHESTPLATE;
+//    ChatColor chatColor = ChatColor.DARK_RED;
+
     public Mage(Player player, MagicSpells plugin) {
         //Create the spellMap
         super();
-        player.sendMessage("You have chosen the Mage class!");
-        PermissionAttachment attachment = player.addAttachment(plugin);
-        //grant permission for list, forget, and scroll spells
-        if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
-        
-        //Remove all spell permissions
-        for(Map.Entry m : allSpells.entrySet()) {
-            //removing this permission will not unlearn the spell, try /cast forget <player>
-            attachment.setPermission("magicspells.grant."+m.getKey(), false);
-            attachment.setPermission("magicspells.cast."+m.getKey(), false);
-//            attachment.setPermission("magicspells.learn."+m.getKey(), false);            
-        }
-        
-        //Add spell permissions just for this class
-        for(Map.Entry m : allSpells.entrySet()) {
-            if (m.getValue().equals("mage")) {
-                attachment.setPermission("magicspells.grant."+m.getKey(), true);
-                attachment.setPermission("magicspells.cast."+m.getKey(), true);
-//                attachment.setPermission("magicspells.learn."+m.getKey(), false);
-            }
-        }
-        
-//        Spellbook spellbook = MagicSpells.getSpellbook(player);        
-//        spellbook.removeAllSpells();
-//        spellbook.addSpell(MagicSpells.getSpellByInternalName("fireball"));
+        attachment = player.addAttachment(plugin);
+        player.sendMessage(String.format("%sYou have chosen the %sMage%s class!", ChatColor.GOLD, ChatColor.DARK_RED, ChatColor.GOLD));
     }
     
-///** 
-// * Add transient permission to a player. This operation adds a world-unspecific permission onto the player object in bukkit via Bukkit's permission interface.
-// * @param player Player Object
-// * @param permission Permission node
-// * @return Success or Failure
-// */
-//    private boolean playerAddTransient(Player player,String permission){
-//        for (  PermissionAttachmentInfo paInfo : player.getEffectivePermissions()) {
-//            if (paInfo.getAttachment() != null && paInfo.getAttachment().getPlugin().equals(plugin)) {
-//                paInfo.getAttachment().setPermission(permission,true);
-//                return true;
-//               }
-//        }
-//        PermissionAttachment attach=player.addAttachment(plugin);
-//        attach.setPermission(permission,true);
-//        return true;
+    @Override
+    protected void setSpellPerms(Player player, MagicSpells plugin) {
+        //Delete current spellbook and revoke permissions
+        removeSpellPerms(player, attachment);
+        //Add spell permissions just for this class
+        for (String spellName : getSpells()) {
+            System.out.println("Setting permissions for: "+spellName);
+//            attachment.setPermission("magicspells.grant."+spellName, true);
+            attachment.setPermission("magicspells.cast."+spellName, true);
+            attachment.setPermission("magicspells.learn."+spellName, true);
+        }
+        player.sendMessage("You have chosen the Mage class!");
+    }
+    
+    @Override
+    void openClassGUI(Player player, String className) {
+//        Inventory inv = Bukkit.createInventory(null, 9, ChatColor.DARK_GREEN + "Class Selector");
+//        ItemStack architect = new ItemStack(Material.DIAMOND_CHESTPLATE);
+//        ItemMeta architectMeta = architect.getItemMeta();
+//        architectMeta.setDisplayName(ChatColor.DARK_RED + "Architect");
+//        architect.setItemMeta(architectMeta);
+//        inv.setItem(0, architect);
+    }
+    
+    @Override
+    protected String getClassName() {
+        return this.className;
+    }
+    
+    @Override
+    protected String[] getSpells() {
+        System.out.println("Getting spells for: "+getClassName());
+        return super.spellMap.get(getClassName());
+    }
+    
+//    protected Material getMenuItem() {
+//        return this.menuItem;
 //    }
     
-    @Override
-    public void castQ() {
-        System.out.println("Casting fireball...");
+    protected Integer[] getSanctum() {
+        return this.sanctum;
     }
     
-    @Override
-    public void castE() {
-        System.out.println("Casting freeze...");
-    }
-    
-    @Override
-    public void castR() {
-        System.out.println("Casting lightning bolt...");
-    }
-    
-    @Override
-    public void castF() {
-        System.out.println("Casting blink...");
-    }
-    
-    @Override
-    public String getPlayerClass() {
-        return this.toString();
-    }
+//    protected ChatColor getChatColor() {
+//        return this.chatColor;
+//    }
+
 }

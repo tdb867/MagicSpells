@@ -3,86 +3,77 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ungoliant.magicspells;
+package com.ungoliant.magicspells.playerclasses;
 
 import com.nisovin.magicspells.MagicSpells;
 import java.util.Map;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.permissions.PermissionAttachment;
 
 /**
  *
  * @author Travis
  */
-public class Ward extends ClassPermissions implements SpellLoadout{
-    
-    public Ward(Player player, MagicSpells plugin) {       
-        PermissionAttachment attachment = player.addAttachment(plugin);
-        //grant permission for list, forget, and scroll spells
-        if (player.isOp()) {attachment.setPermission("magicspells.advanced.*", true);}
-        player.sendMessage("You have chosen the Ward class!");
-        //Remove all spell permissions
-        for(Map.Entry m : allSpells.entrySet()) {
-            //removing this permission will not unlearn the spell, try /cast forget <player>
-            attachment.setPermission("magicspells.grant."+m.getKey(), false);
-            attachment.setPermission("magicspells.cast."+m.getKey(), false);
-//            attachment.setPermission("magicspells.learn."+m.getKey(), false);            
-        }
-        
+public class Ward extends SpellClass{
+    private final String className = "ward";
+    Integer[] sanctum =  {3828,90,3819};
+//    Material menuItem = Material.DIAMOND_CHESTPLATE;
+//    ChatColor chatColor = ChatColor.DARK_RED;
+
+    public Ward(Player player, MagicSpells plugin) {
+        //Create the spellMap
+        super();
+        attachment = player.addAttachment(plugin);
+        player.sendMessage(String.format("%sYou have chosen the %sWard%s class!", ChatColor.GOLD, ChatColor.DARK_RED, ChatColor.GOLD));
+    }
+    @Override
+    protected void setSpellPerms(Player player, MagicSpells plugin) {
+        super.removeSpellPerms(player, attachment);
         //Add spell permissions just for this class
-        for(Map.Entry m : allSpells.entrySet()) {
-            if (m.getValue().equals("ward")) {
-                attachment.setPermission("magicspells.grant."+m.getKey(), true);
-                attachment.setPermission("magicspells.cast."+m.getKey(), true);
-//                attachment.setPermission("magicspells.learn."+m.getKey(), false);
-            }
+        for (String spellName : getSpells()) {
+//            attachment.setPermission("magicspells.grant."+spellName, true);
+            attachment.setPermission("magicspells.cast."+spellName, true);
+            attachment.setPermission("magicspells.learn."+spellName, true);
         }
-        
-//        Spellbook spellbook = MagicSpells.getSpellbook(player);        
-//        spellbook.removeAllSpells();
-//        spellbook.addSpell(MagicSpells.getSpellByInternalName("fireball"));
+        player.sendMessage("You have chosen the Ward class!");
     }
     
-///** 
-// * Add transient permission to a player. This operation adds a world-unspecific permission onto the player object in bukkit via Bukkit's permission interface.
-// * @param player Player Object
-// * @param permission Permission node
-// * @return Success or Failure
-// */
-//    private boolean playerAddTransient(Player player,String permission){
-//        for (  PermissionAttachmentInfo paInfo : player.getEffectivePermissions()) {
-//            if (paInfo.getAttachment() != null && paInfo.getAttachment().getPlugin().equals(plugin)) {
-//                paInfo.getAttachment().setPermission(permission,true);
-//                return true;
-//               }
-//        }
-//        PermissionAttachment attach=player.addAttachment(plugin);
-//        attach.setPermission(permission,true);
-//        return true;
+    @Override
+    void openClassGUI(Player player, String className) {
+//        Inventory inv = Bukkit.createInventory(null, 9, ChatColor.DARK_GREEN + "Class Selector");
+//        ItemStack architect = new ItemStack(Material.DIAMOND_CHESTPLATE);
+//        ItemMeta architectMeta = architect.getItemMeta();
+//        architectMeta.setDisplayName(ChatColor.DARK_RED + "Architect");
+//        architect.setItemMeta(architectMeta);
+//        inv.setItem(0, architect);
+    }
+    
+    @Override
+    protected String getClassName() {
+        return this.className;
+    }
+    
+    @Override
+    protected String[] getSpells() {
+        return super.spellMap.get(getClassName());
+    }
+    
+//    protected Material getMenuItem() {
+//        return this.menuItem;
 //    }
     
-    @Override
-    public void castQ() {
-        System.out.println("Casting invulnerability...");
+    protected Integer[] getSanctum() {
+        return this.sanctum;
     }
     
-    @Override
-    public void castE() {
-        System.out.println("Casting cleanse...");
-    }
-    
-    @Override
-    public void castR() {
-        System.out.println("Casting empower...");
-    }
-    
-    @Override
-    public void castF() {
-        System.out.println("Casting reflect...");
-    }
-    
-    @Override
-    public String getPlayerClass() {
-        return this.toString();
-    }
+//    protected ChatColor getChatColor() {
+//        return this.chatColor;
+//    }
+
 }
