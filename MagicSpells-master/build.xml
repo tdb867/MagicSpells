@@ -26,13 +26,13 @@
 	<property name="factions.build.dir" location="bin_factions"/>
         
         <property name="dev.version" value="1.0"/>
-	<property name="dev.src.dir" location="C:\\Users\\Travis\\Documents\\NetBeansProjects\\MagicSpells-dev\\MagicSpells-dev\\src"/>
-	<property name="dev.build.dir" location="C:\\Users\\Travis\\Documents\\NetBeansProjects\\MagicSpells-dev\\MagicSpells-dev\\bin"/>
+	<property name="dev.src.dir" location="..\\MagicSpells-dev\\src"/>
+	<property name="dev.build.dir" location="..\\MagicSpells-dev\\bin"/>
 	
 	<property name="dist.dir" location="dist"/>
 	<property name="lib.dir" location="lib"/>
 	<property name="doc.dir" location="doc"/>
-	<property name="serv.dir" location="C:\\Users\\Travis\\Desktop\\Minecraft_Projects\\ServerSnapshot_10June17\\ServerSnapshot_10June17\\_\\plugins"/>
+	<property name="serv.dir" location="..\\dev\\plugins"/>
 	<tstamp><format property="datestamp" pattern="yyMMddHHmm"/></tstamp>
 		
 	<target name="build" depends="build-version, clean, core-jar, teams-jar, memory-jar, shop-jar, towny-jar, factions-jar, dev-jar, zip"/>
