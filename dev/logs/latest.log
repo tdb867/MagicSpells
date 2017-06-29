@@ -1,0 +1,193 @@
+[21:59:11] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[21:59:11] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[21:59:11] [Server thread/INFO]: Loading properties
+[21:59:11] [Server thread/INFO]: Default game type: CREATIVE
+[21:59:11] [Server thread/INFO]: Generating keypair
+[21:59:11] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:59:11] [Server thread/INFO]: Using default channel type
+[21:59:12] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-6e3cec8 (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)
+[21:59:12] [Server thread/ERROR]: Could not load 'plugins\MagicSpellsTowny.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Towny
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:219) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.loadPlugins(CraftServer.java:298) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.<init>(CraftServer.java:260) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.PlayerList.<init>(PlayerList.java:73) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:185) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+[21:59:12] [Server thread/ERROR]: Could not load 'plugins\MagicSpellsFactions.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Factions
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:219) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.loadPlugins(CraftServer.java:298) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.<init>(CraftServer.java:260) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.PlayerList.<init>(PlayerList.java:73) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:185) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+[21:59:12] [Server thread/ERROR]: Could not load 'plugins\worldguard-6.2.jar' in folder 'plugins'
+org.bukkit.plugin.InvalidPluginException: java.lang.NoClassDefFoundError: com/sk89q/minecraft/util/commands/CommandsManager
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:131) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugin(SimplePluginManager.java:328) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:251) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.loadPlugins(CraftServer.java:298) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.<init>(CraftServer.java:260) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.PlayerList.<init>(PlayerList.java:73) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:185) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+Caused by: java.lang.NoClassDefFoundError: com/sk89q/minecraft/util/commands/CommandsManager
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_131]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_131]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:40) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:127) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	... 9 more
+Caused by: java.lang.ClassNotFoundException: com.sk89q.minecraft.util.commands.CommandsManager
+	at java.net.URLClassLoader.findClass(Unknown Source) ~[?:1.8.0_131]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:77) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:62) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_131]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_131]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_131]
+	at org.bukkit.plugin.java.PluginClassLoader.<init>(PluginClassLoader.java:40) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.java.JavaPluginLoader.loadPlugin(JavaPluginLoader.java:127) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	... 9 more
+[21:59:12] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[21:59:12] [Server thread/INFO]: [Vault] Loading Vault v1.5.6-b49
+[21:59:12] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v4.2.1
+[21:59:13] [Server thread/INFO]: [Residence] Loading Residence v2.6.6.6
+[21:59:13] [Server thread/INFO]: [MagicSpells] Loading MagicSpells v3.5-dev-1706142157
+[21:59:13] [Server thread/INFO]: [CommandSelect] Loading CommandSelect v1.3
+[21:59:13] [Server thread/INFO]: [MagicSpellsMemory] Loading MagicSpellsMemory v1.2-dev-1706142157
+[21:59:13] [Server thread/INFO]: [MagicSpellsShop] Loading MagicSpellsShop v1.6-dev-1706142157
+[21:59:13] [Server thread/INFO]: [MagicSpellsTeams] Loading MagicSpellsTeams v1.0-dev-1706142157
+[21:59:13] [Server thread/INFO]: [Vault] Enabling Vault v1.5.6-b49
+[21:59:13] [Server thread/INFO]: [Vault] [Permission] PermissionsEx found: Waiting
+[21:59:13] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[21:59:13] [Server thread/INFO]: [Vault] [Chat] PermissionsEx found: Waiting
+[21:59:13] [Server thread/INFO]: [Vault] Enabled Version 1.5.6-b49
+[21:59:13] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v4.2.1
+[21:59:13] [Server thread/INFO]: [ProtocolLib] Started structure compiler thread.
+[21:59:13] [Server thread/INFO]: Preparing level "world"
+[21:59:13] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3321692010237815051)
+[21:59:14] [Server thread/INFO]: Preparing spawn area: 4%
+[21:59:15] [Server thread/INFO]: Preparing spawn area: 75%
+[21:59:16] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3321692010237815051)
+[21:59:16] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[21:59:16] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[21:59:16] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[21:59:16] [Server thread/INFO]: [Vault][Permission] PermissionsEx hooked.
+[21:59:16] [Server thread/INFO]: [Vault][Chat] PermissionsEx_Chat hooked.
+[21:59:16] [Server thread/INFO]: [Residence] Enabling Residence v2.6.6.6
+[21:59:16] [Server thread/INFO]: [Residence] Found Vault using permissions plugin:PermissionsEx
+[21:59:18] [Server thread/INFO]: [Residence] Scanning for economy systems...
+[21:59:18] [Server thread/INFO]: [Residence] Found Vault, but Vault reported no usable economy system...
+[21:59:18] [Server thread/INFO]: [Residence] BOSEconomy NOT found!
+[21:59:18] [Server thread/INFO]: [Residence] Essentials Economy NOT found!
+[21:59:18] [Server thread/INFO]: [Residence] RealShop Economy NOT found!
+[21:59:18] [Server thread/INFO]: [Residence] iConomy NOT found!
+[21:59:18] [Server thread/INFO]: [Residence] Unable to find an economy system...
+[21:59:18] [Server thread/WARN]: [Residence] Save directory does not exist...
+[21:59:18] [Server thread/WARN]: [Residence] Please restart server
+[21:59:18] [Server thread/INFO]: [Residence] WorldEdit NOT found!
+[21:59:18] [Server thread/ERROR]: Error occurred while enabling Residence v2.6.6.6 (Is it up to date?)
+java.lang.NoSuchMethodError: org.bukkit.Server.getOnlinePlayers()[Lorg/bukkit/entity/Player;
+	at com.bekvon.bukkit.residence.listeners.ResidencePlayerListener.<init>(ResidencePlayerListener.java:69) ~[?:?]
+	at com.bekvon.bukkit.residence.Residence.onEnable(Residence.java:301) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:271) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:329) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:404) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.enablePlugin(CraftServer.java:361) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.enablePlugins(CraftServer.java:323) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.t(MinecraftServer.java:411) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.l(MinecraftServer.java:372) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.a(MinecraftServer.java:327) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:244) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+[21:59:18] [Server thread/INFO]: [MagicSpells] Enabling MagicSpells v3.5-dev-1706142157
+[21:59:18] [Server thread/WARN]: [MagicSpells] This MagicSpells version is not fully compatible with this server version.
+[21:59:18] [Server thread/WARN]: [MagicSpells] Some features have been disabled.
+[21:59:18] [Server thread/WARN]: [MagicSpells] See http://nisovin.com/magicspells/volatilefeatures for more information.
+[21:59:18] [Server thread/WARN]: [MagicSpells] ProtocolLib found: some compatibility re-enabled
+[21:59:18] [Server thread/INFO]: [MagicSpells] Initializing permissions
+[21:59:18] [Server thread/INFO]: [MagicSpells] Loading predefined items...
+[21:59:18] [Server thread/INFO]: [MagicSpells] ...0 predefined items loaded
+[21:59:18] [Server thread/INFO]: [MagicSpells] Loading variables...
+[21:59:18] [Server thread/INFO]: [MagicSpells] ...0 variables loaded
+[21:59:18] [Server thread/INFO]: [MagicSpells] Loading spells...
+[21:59:18] [Server thread/WARN]: [MagicSpells] LONG SPELL LOAD TIME: minion: 81ms
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...spells loaded: 95
+[21:59:19] [Server thread/INFO]: [MagicSpells] Finalizing perms...
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...done
+[21:59:19] [Server thread/INFO]: [MagicSpells] Initializing spells...
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...done
+[21:59:19] [Server thread/INFO]: [MagicSpells] Loading online player spellbooks...
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...done
+[21:59:19] [Server thread/INFO]: [MagicSpells] Initializing passive manager...
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...done
+[21:59:19] [Server thread/INFO]: [MagicSpells] Restored cooldowns
+[21:59:19] [Server thread/INFO]: [MagicSpells] Enabling mana bars...
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...done
+[21:59:19] [Server thread/INFO]: [MagicSpells] Loading cast listeners...
+[21:59:19] [Server thread/INFO]: [MagicSpells] ...done
+[21:59:19] [Server thread/INFO]: [MagicSpells] MagicSpells loading complete!
+[21:59:19] [Server thread/INFO]: [CommandSelect] Enabling CommandSelect v1.3
+[21:59:19] [Server thread/INFO]: [CommandSelect] Hello World! MagicSpells-dev has been enabled!
+[21:59:19] [Server thread/INFO]: MagicSpells-dev is enabled.
+[21:59:19] [Server thread/ERROR]: Error occurred while enabling CommandSelect v1.3 (Is it up to date?)
+org.bukkit.plugin.IllegalPluginAccessException: Unable to find handler list for event org.bukkit.event.player.PlayerEvent. Static getHandlerList method required!
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:585) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.SimplePluginManager.getRegistrationClass(SimplePluginManager.java:583) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.SimplePluginManager.registerEvents(SimplePluginManager.java:527) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at com.ungoliant.magicspells.playerclasses.CommandSelect.onEnable(CommandSelect.java:52) ~[?:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:271) ~[craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:329) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:404) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.enablePlugin(CraftServer.java:361) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.enablePlugins(CraftServer.java:323) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.t(MinecraftServer.java:411) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.l(MinecraftServer.java:372) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.a(MinecraftServer.java:327) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:244) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_131]
+[21:59:19] [Server thread/INFO]: [MagicSpellsMemory] Enabling MagicSpellsMemory v1.2-dev-1706142157
+[21:59:19] [Server thread/INFO]: [MagicSpellsShop] Enabling MagicSpellsShop v1.6-dev-1706142157
+[21:59:19] [Server thread/INFO]: [MagicSpellsShop] MagicSpellsShop config loaded.
+[21:59:19] [Server thread/INFO]: [MagicSpellsTeams] Enabling MagicSpellsTeams v1.0-dev-1706142157
+[21:59:19] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:59:19] [Server thread/INFO]: Done (5.935s)! For help, type "help" or "?"
+[21:59:19] [pool-3-thread-4/INFO]: [Vault] Checking for Updates ... 
+[21:59:19] [pool-3-thread-4/INFO]: [Vault] No new version available
+[22:00:00] [User Authenticator #1/INFO]: UUID of player vaughandevine is f9100aab-caa3-463c-a54d-2931749ac79d
+[22:00:01] [Server thread/INFO]: vaughandevine[/127.0.0.1:51087] logged in with entity id 97 at ([world]664.6725827463048, 70.0, 214.29798283108875)
+[22:00:09] [Server thread/INFO]: Opped vaughandevine
+[22:00:44] [Server thread/INFO]: vaughandevine issued server command: /c bind wormhole
+[22:00:56] [Server thread/INFO]: vaughandevine issued server command: /c bind forcebomb
+[22:01:25] [Server thread/INFO]: vaughandevine issued server command: /c frostnova
+[22:01:33] [Server thread/INFO]: vaughandevine issued server command: /c frostnova
+[22:01:40] [Server thread/INFO]: vaughandevine issued server command: /frostnova
+[22:01:43] [Server thread/INFO]: vaughandevine issued server command: /c frostnova
+[22:01:51] [Server thread/INFO]: vaughandevine issued server command: /c frostnova
+[22:05:08] [Server thread/INFO]: Stopping the server
+[22:05:08] [Server thread/INFO]: Stopping server
+[22:05:08] [Server thread/INFO]: [MagicSpellsTeams] Disabling MagicSpellsTeams v1.0-dev-1706142157
+[22:05:08] [Server thread/INFO]: [MagicSpellsShop] Disabling MagicSpellsShop v1.6-dev-1706142157
+[22:05:08] [Server thread/INFO]: [MagicSpellsMemory] Disabling MagicSpellsMemory v1.2-dev-1706142157
+[22:05:08] [Server thread/INFO]: [CommandSelect] Disabling CommandSelect v1.3
+[22:05:08] [Server thread/INFO]: MagicSpells-dev is disabled.
+[22:05:08] [Server thread/INFO]: [MagicSpells] Disabling MagicSpells v3.5-dev-1706142157
+[22:05:08] [Server thread/INFO]: [Residence] Disabling Residence v2.6.6.6
+[22:05:08] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v4.2.1
+[22:05:08] [Server thread/INFO]: [Vault] Disabling Vault v1.5.6-b49
+[22:05:08] [Server thread/INFO]: [PermissionsEx] Disabling PermissionsEx v1.23.4
+[22:05:08] [Server thread/INFO]: Saving players
+[22:05:08] [Server thread/INFO]: vaughandevine lost connection: Server closed
+[22:05:08] [Server thread/INFO]: vaughandevine left the game
+[22:05:08] [Server thread/INFO]: Saving worlds
+[22:05:08] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[22:05:09] [Server thread/INFO]: Saving chunks for level 'world_the_end'/The End

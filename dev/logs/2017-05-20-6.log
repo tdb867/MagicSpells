@@ -1,0 +1,147 @@
+[03:39:57] [Server thread/INFO]: Starting minecraft server version 1.11.2
+[03:39:57] [Server thread/WARN]: To start the server with more ram, launch it as "java -Xmx1024M -Xms1024M -jar minecraft_server.jar"
+[03:39:57] [Server thread/INFO]: Loading properties
+[03:39:57] [Server thread/INFO]: Default game type: CREATIVE
+[03:39:57] [Server thread/INFO]: Generating keypair
+[03:39:57] [Server thread/INFO]: Starting Minecraft server on *:25565
+[03:39:57] [Server thread/INFO]: Using default channel type
+[03:39:58] [Server thread/INFO]: This server is running CraftBukkit version git-Bukkit-6e3cec8 (MC: 1.11.2) (Implementing API version 1.11.2-R0.1-SNAPSHOT)
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpells' for files `plugins\MagicSpells-3.5-dev-1705200339.jar' and `plugins\MagicSpells-3.5-dev-1705200333.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpells' for files `plugins\MagicSpells.jar' and `plugins\MagicSpells-3.5-dev-1705200339.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsFactions' for files `plugins\MagicSpellsFactions-1.0-dev-1705200339.jar' and `plugins\MagicSpellsFactions-1.0-dev-1705200333.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsFactions' for files `plugins\MagicSpellsFactions.jar' and `plugins\MagicSpellsFactions-1.0-dev-1705200339.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsMemory' for files `plugins\MagicSpellsMemory-1.2-dev-1705200339.jar' and `plugins\MagicSpellsMemory-1.2-dev-1705200333.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsMemory' for files `plugins\MagicSpellsMemory.jar' and `plugins\MagicSpellsMemory-1.2-dev-1705200339.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsShop' for files `plugins\MagicSpellsShop-1.6-dev-1705200339.jar' and `plugins\MagicSpellsShop-1.6-dev-1705200333.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsShop' for files `plugins\MagicSpellsShop.jar' and `plugins\MagicSpellsShop-1.6-dev-1705200339.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsTeams' for files `plugins\MagicSpellsTeams-1.0-dev-1705200339.jar' and `plugins\MagicSpellsTeams-1.0-dev-1705200333.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsTeams' for files `plugins\MagicSpellsTeams.jar' and `plugins\MagicSpellsTeams-1.0-dev-1705200339.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsTowny' for files `plugins\MagicSpellsTowny-1.3-dev-1705200339.jar' and `plugins\MagicSpellsTowny-1.3-dev-1705200333.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Ambiguous plugin name `MagicSpellsTowny' for files `plugins\MagicSpellsTowny.jar' and `plugins\MagicSpellsTowny-1.3-dev-1705200339.jar' in `plugins'
+[03:39:58] [Server thread/ERROR]: Could not load 'plugins\MagicSpellsTowny.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Towny
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:219) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.loadPlugins(CraftServer.java:298) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.<init>(CraftServer.java:260) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.PlayerList.<init>(PlayerList.java:73) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:185) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_121]
+[03:39:58] [Server thread/ERROR]: Could not load 'plugins\MagicSpellsFactions.jar' in folder 'plugins'
+org.bukkit.plugin.UnknownDependencyException: Factions
+	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:219) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.loadPlugins(CraftServer.java:298) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at org.bukkit.craftbukkit.v1_11_R1.CraftServer.<init>(CraftServer.java:260) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.PlayerList.<init>(PlayerList.java:73) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedPlayerList.<init>(SourceFile:14) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.DedicatedServer.init(DedicatedServer.java:185) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at net.minecraft.server.v1_11_R1.MinecraftServer.run(MinecraftServer.java:521) [craftbukkit-1.11.2.jar:git-Bukkit-6e3cec8]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_121]
+[03:39:59] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.5;4651611
+[03:39:59] [Server thread/INFO]: [Essentials] Loading Essentials v2.0.1-b370
+[03:39:59] [Server thread/INFO]: [Replenish] Loading Replenish v2.1.0
+[03:39:59] [Server thread/INFO]: [PermissionsEx] Loading PermissionsEx v1.23.4
+[03:39:59] [Server thread/WARN]: [PermissionsEx] This server is in offline mode. Unless this server is configured to integrate with a supported proxy (see http://dft.ba/-8ous), UUIDs *may not be stable*!
+[03:39:59] [Server thread/INFO]: [Chairs] Loading Chairs v4.1
+[03:39:59] [Server thread/INFO]: [SetSpawn] Loading SetSpawn v2.2.1
+[03:39:59] [Server thread/INFO]: [MyHome] Loading MyHome v2.3.2
+[03:39:59] [Server thread/INFO]: [JustInvSee] Loading JustInvSee v7.0
+[03:39:59] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v2.4-b527
+[03:39:59] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.3-SNAPSHOT;c904242
+[03:39:59] [Server thread/INFO]: [MagicSpells] Loading MagicSpells v3.5-dev-1705200339
+[03:39:59] [Server thread/INFO]: [MagicSpellsMemory] Loading MagicSpellsMemory v1.2-dev-1705200339
+[03:39:59] [Server thread/INFO]: [MagicSpellsShop] Loading MagicSpellsShop v1.6-dev-1705200339
+[03:39:59] [Server thread/INFO]: [MagicSpellsTeams] Loading MagicSpellsTeams v1.0-dev-1705200339
+[03:39:59] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[03:39:59] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[03:39:59] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[03:39:59] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[03:39:59] [Server thread/INFO]: Preparing level "world"
+[03:39:59] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3321692010237815051)
+[03:40:00] [Server thread/INFO]: Preparing spawn area: 4%
+[03:40:01] [Server thread/INFO]: Preparing spawn area: 80%
+[03:40:01] [Server thread/INFO]: Preparing start region for level 1 (Seed: 3321692010237815051)
+[03:40:01] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.5;4651611
+[03:40:02] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[03:40:02] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_11_R1 as the Bukkit adapter
+[03:40:02] [Server thread/INFO]: [Essentials] Enabling Essentials v2.0.1-b370
+[03:40:02] [Server thread/INFO]: Using locale en_US
+[03:40:02] [Server thread/INFO]: [Essentials] Using 1.8.3+ BlockStateMeta provider as mob spawner provider.
+[03:40:03] [Server thread/INFO]: [Essentials] Using legacy item data provider as spawn egg provider.
+[03:40:03] [Server thread/INFO]: [Essentials] Using 1.9+ BasePotionData provider as potion meta provider.
+[03:40:03] [Server thread/INFO]: Using locale en_US
+[03:40:03] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global PluginMetrics config.
+[03:40:03] [Server thread/WARN]: [Essentials] Detected supported permissions plugin PermissionsEx without Vault installed.
+[03:40:03] [Server thread/WARN]: [Essentials] Features such as chat prefixes/suffixes and group-related functionality will not work until you install Vault.
+[03:40:03] [Server thread/INFO]: [Essentials] Using superperms-based permissions.
+[03:40:03] [Server thread/INFO]: [Replenish] Enabling Replenish v2.1.0
+[03:40:03] [Server thread/INFO]: [PermissionsEx] Enabling PermissionsEx v1.23.4
+[03:40:03] [Server thread/INFO]: [PermissionsEx] Initializing file backend
+[03:40:03] [Server thread/INFO]: [PermissionsEx] Permissions file successfully reloaded
+[03:40:03] [Server thread/INFO]: WEPIF: PermissionsEx detected! Using PermissionsEx for permissions.
+[03:40:03] [Server thread/INFO]: [Chairs] Enabling Chairs v4.1
+[03:40:03] [Server thread/INFO]: [SetSpawn] Enabling SetSpawn v2.2.1
+[03:40:03] [Server thread/INFO]: [MyHome] Enabling MyHome v2.3.2
+[03:40:03] [Server thread/INFO]: Need to download 3 object(s)
+[03:40:03] [Server thread/INFO]:  - Downloading file : http://www.playminecraft.net/MyHome/lib/sqlite.jar
+[03:40:04] [Server thread/INFO]: [MyHome] 0 homes loaded
+[03:40:04] [Server thread/INFO]: [MyHome] Using localization: English (en)
+[03:40:04] [Server thread/INFO]: [MyHome] Access Control: Using PermissionsEx v1.23.4
+[03:40:04] [Server thread/INFO]: [MyHome] MyHome 2.3.2 enabled
+[03:40:04] [Server thread/INFO]: [JustInvSee] Enabling JustInvSee v7.0
+[03:40:04] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v2.4-b527
+[03:40:04] [Server thread/INFO]: [Multiverse-Core] - Version 2.4-b527 (API v14) Enabled - By Rigby, fernferret, lithium3141 and main--
+[03:40:04] [Server thread/INFO]: [AllPay] - Version 10.0 - hooked into Essentials Economy for Multiverse-Core v2.4-b527
+[03:40:04] [Server thread/INFO]: [Multiverse-Core] Loading World & Settings - 'world' - Env: NORMAL - Type: NORMAL & seed: 3321692010237815051
+[03:40:04] [Server thread/INFO]: [Multiverse-Core] Loading World & Settings - 'world_the_end' - Env: THE_END - Type: NORMAL & seed: 3321692010237815051
+[03:40:04] [Server thread/INFO]: [Multiverse-Core] 2 - World(s) loaded.
+[03:40:04] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[03:40:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world_the_end) TNT ignition is PERMITTED.
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world_the_end) Lighters are PERMITTED.
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world_the_end) Lava fire is blocked.
+[03:40:04] [Server thread/INFO]: [WorldGuard] (world_the_end) Fire spread is UNRESTRICTED.
+[03:40:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world_the_end'
+[03:40:04] [Server thread/INFO]: [WorldGuard] Loading region data...
+[03:40:04] [Server thread/INFO]: [MagicSpells] Enabling MagicSpells v3.5-dev-1705200339
+[03:40:05] [Server thread/WARN]: [MagicSpells] This MagicSpells version is not fully compatible with this server version.
+[03:40:05] [Server thread/WARN]: [MagicSpells] Some features have been disabled.
+[03:40:05] [Server thread/WARN]: [MagicSpells] See http://nisovin.com/magicspells/volatilefeatures for more information.
+[03:40:05] [Server thread/INFO]: [MagicSpells] Initializing permissions
+[03:40:05] [Server thread/INFO]: [MagicSpells] Loading predefined items...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...0 predefined items loaded
+[03:40:05] [Server thread/INFO]: [MagicSpells] Loading variables...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...0 variables loaded
+[03:40:05] [Server thread/INFO]: [MagicSpells] Loading spells...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...spells loaded: 88
+[03:40:05] [Server thread/INFO]: [MagicSpells] Finalizing perms...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[03:40:05] [Server thread/INFO]: [MagicSpells] Initializing spells...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[03:40:05] [Server thread/INFO]: [MagicSpells] Loading online player spellbooks...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[03:40:05] [Server thread/INFO]: [MagicSpells] Initializing passive manager...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[03:40:05] [Server thread/INFO]: [MagicSpells] Restored cooldowns
+[03:40:05] [Server thread/INFO]: [MagicSpells] Enabling mana bars...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[03:40:05] [Server thread/INFO]: [MagicSpells] Loading cast listeners...
+[03:40:05] [Server thread/INFO]: [MagicSpells] ...done
+[03:40:05] [Server thread/INFO]: [MagicSpells] MagicSpells loading complete!
+[03:40:05] [Server thread/INFO]: [MagicSpellsMemory] Enabling MagicSpellsMemory v1.2-dev-1705200339
+[03:40:05] [Server thread/INFO]: [MagicSpellsShop] Enabling MagicSpellsShop v1.6-dev-1705200339
+[03:40:05] [Server thread/INFO]: [MagicSpellsShop] MagicSpellsShop config loaded.
+[03:40:05] [Server thread/INFO]: [MagicSpellsTeams] Enabling MagicSpellsTeams v1.0-dev-1705200339
+[03:40:05] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[03:40:05] [Server thread/INFO]: Done (6.514s)! For help, type "help" or "?"
+[03:40:21] [Server thread/INFO]: vaughandevine[/127.0.0.1:54452] logged in with entity id 169 at ([world]370.9412125674695, 70.0, 241.80580419995283)
+[03:40:26] [Server thread/INFO]: vaughandevine issued server command: /cast list
+[03:40:30] [Server thread/INFO]: vaughandevine issued server command: /hello
+[03:40:34] [Server thread/INFO]: vaughandevine issued server command: /class
+[03:40:48] [Server thread/INFO]: vaughandevine lost connection: Disconnected
+[03:40:48] [Server thread/INFO]: vaughandevine left the game

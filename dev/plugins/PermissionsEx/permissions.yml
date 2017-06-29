@@ -1,0 +1,20 @@
+groups:
+  default:
+    options:
+      default: true
+    permissions:
+    - modifyworld.*
+schema-version: 1
+users:
+  00dc4e69-db36-3ea5-9e4c-0349f98a2647:
+    group: []
+    options:
+      name: vaughandevine
+      last-login-time: '1496890327'
+      last-logout-time: '1496890030'
+  f9100aab-caa3-463c-a54d-2931749ac79d:
+    group: []
+    options:
+      name: vaughandevine
+      last-login-time: '1497495600'
+      last-logout-time: '1497332208'
